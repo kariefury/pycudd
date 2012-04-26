@@ -165,3 +165,16 @@ static PyObject * array_to_tuple(PyObject *dest, int **src, int sz) {
   $1 = glob_conj;
 }
 
+/* Conversion function for adapting FILE* pointers to Python File type.
+ * Adapted from:
+ * http://pycurious.org/2009/12/passing-python-file-objects-across-a-swig-interface/
+*/
+%typemap(in) FILE* {
+    if ( PyFile_Check($input) ){
+        $1 = PyFile_AsFile($input);
+    } else {
+        PyErr_SetString(PyExc_TypeError, "$1_name must be a file type.");
+        return NULL;
+    }
+}
+
