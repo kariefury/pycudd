@@ -66,9 +66,9 @@ ICFLAGS	= -g -O6
 # Gcc 2.8.1 on i686.
 #XCFLAGS	= -mcpu=pentiumpro -malign-double -DHAVE_IEEE_754 -DBSD
 # Gcc 4.2.4 or higher on x86 (32-bit)
-XCFLAGS	= -m32 -DHAVE_IEEE_754 -DBSD -DSIZEOF_VOID_P=4 -DSIZEOF_LONG=8 -fPIC
+# XCFLAGS	= -m32 -DHAVE_IEEE_754 -DBSD -DSIZEOF_VOID_P=4 -DSIZEOF_LONG=8 -fPIC
 # Gcc 4.2.4 or higher on x86_64 (64-bit compilation)
-#XCFLAGS	= -mtune=native -DHAVE_IEEE_754 -DBSD -DSIZEOF_VOID_P=8 -DSIZEOF_LONG=8 -fPIC
+XCFLAGS	= -mtune=native -DHAVE_IEEE_754 -DBSD -DSIZEOF_VOID_P=8 -DSIZEOF_LONG=8 -fPIC
 # Gcc 4.2.4 or higher on x86_64 (32-bit compilation)
 #XCFLAGS	= -m32 -mtune=native -malign-double -DHAVE_IEEE_754 -DBSD
 # Icc on i686 (older versions may not support -xHost).
