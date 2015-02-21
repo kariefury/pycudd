@@ -126,6 +126,5 @@ distclean: clean
 	*.bak *~ tags .gdb_history *.qv *.qx
 
 libso:
-	gcc -shared $(POBJ) -o ../lib/libcudd.so
-
+	gcc -shared $(POBJ) -o ../cudd/lib/libcudd.so
 

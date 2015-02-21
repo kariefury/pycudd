@@ -244,5 +244,5 @@ distclean: clean
 	
 
 libso:
-	gcc -shared $(POBJ) -o ../lib/libdddmp.so
+	gcc -shared $(POBJ) -o ../cudd/lib/libdddmp.so
 

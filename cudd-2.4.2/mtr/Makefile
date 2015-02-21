@@ -99,4 +99,4 @@ distclean: clean
 	
 
 libso:
-	gcc -shared $(POBJ) -o ../lib/libcuddmtr.so
+	gcc -shared $(POBJ) -o ../cudd/lib/libcuddmtr.so

@@ -1,4 +1,4 @@
-# $Id$
+#$Id$
 #
 # epd -- extended precision
 #---------------------------------------------------------------------------
@@ -68,4 +68,4 @@ distclean: clean
 	
 	
 libso:
-	gcc -shared $(POBJ) -o ../lib/libcuddepd.so
+	gcc -shared $(POBJ) -o ../cudd/lib/libcuddepd.so

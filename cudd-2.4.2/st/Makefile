@@ -69,4 +69,4 @@ distclean: clean
 
 
 libso:
-	gcc -shared $(POBJ) -o ../lib/libcuddst.so
+	gcc -shared $(POBJ) -o ../cudd/lib/libcuddst.so
