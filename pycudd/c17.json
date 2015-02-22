@@ -1,0 +1,123 @@
+{
+    "directed": false, 
+    "graph": [
+        [
+            "name", 
+            "myGraph"
+        ]
+    ], 
+    "nodes": [
+        {
+            "gate": "i", 
+            "id": 1
+        }, 
+        {
+            "gate": "i", 
+            "id": 2
+        }, 
+        {
+            "gate": "i", 
+            "id": 3
+        }, 
+        {
+            "gate": "i", 
+            "id": 4
+        }, 
+        {
+            "gate": "i", 
+            "id": 5
+        }, 
+        {
+            "gate": "o", 
+            "id": 6
+        }, 
+        {
+            "gate": "o", 
+            "id": 7
+        }, 
+        {
+            "gate": "and", 
+            "id": 8
+        }, 
+        {
+            "gate": "and", 
+            "id": 9
+        }, 
+        {
+            "gate": "and", 
+            "id": 10
+        }, 
+        {
+            "gate": "and", 
+            "id": 11
+        }, 
+        {
+            "gate": "and", 
+            "id": 12
+        }, 
+        {
+            "gate": "and", 
+            "id": 13
+        }
+    ], 
+    "links": [
+        {
+            "source": 2, 
+            "target": 7
+        }, 
+        {
+            "source": 3, 
+            "target": 7
+        }, 
+        {
+            "source": 0, 
+            "target": 8
+        }, 
+        {
+            "source": 2, 
+            "target": 8
+        }, 
+        {
+            "source": 4, 
+            "target": 9
+        }, 
+         
+        {
+            "source": 1, 
+            "target": 10
+        },
+        {
+            "source": 7, 
+            "target": 9
+        }, 
+        {
+            "source": 7, 
+            "target": 10
+        },
+        {
+            "source": 11, 
+            "target": 6
+        },  
+        {
+            "source": 9, 
+            "target": 11
+        }, 
+        {
+            "source": 10, 
+            "target": 11
+        }, 
+        {
+            "source": 12, 
+            "target": 5
+        }, 
+        {
+            "source": 8, 
+            "target": 12
+        }, 
+        {
+            "source": 10, 
+            "target": 12
+        }
+    ], 
+    "multigraph": false
+}
